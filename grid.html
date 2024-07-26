@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            /*첫번재 col은 200px 쓰고 두번재는 나머지 다 쓴다*/
+        }
+
+        div {
+            border: 5px solid blue;
+            margin: 3px;
+            font-size: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <div>NAVIGATION</div>
+        <div>ARTICLE</div>
+        <div>temp</div>
+        <div>4th </div>
+        <div>5th</div>
+    </div>
+</body>
+
+</html>
