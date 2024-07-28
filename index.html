@@ -14,11 +14,30 @@
             text-align: center;
         }
 
-
-        #Contents {
+        #grid {
             display: grid;
             grid-template-columns: 400px 1fr;
+        }
 
+        #Content {
+            display: grid;
+        }
+
+        #Left {
+            border-right: 2px solid rgba(173, 173, 173);
+            margin: 20px
+        }
+
+        @media(max-width:700px) {
+            #grid {
+                display: block;
+                grid-template-columns: 400px 1fr;
+            }
+
+            #Left {
+                border-right: none;
+                border-bottom: 2px solid rgba(173, 173, 173);
+            }
         }
     </style>
 </head>
@@ -38,32 +57,32 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    <div id="Intro" style="border-bottom: 3px solid rgba(173, 173, 173, 0.63); padding-bottom: 15px">
+    <div id="Intro" style="border-bottom: 3px solid rgba(173, 173, 173); padding-bottom: 15px">
         <h1>Reading-Place</h1>
     </div>
 
-    <div id="Contents">
-        <div id="List" style="border-right: 2px solid gray; margin: 20px">
+    <div id="grid">
+        <div id="Left">
             <ol>
                 <li>혼자있는 시간의 힘</li>
                 <li>더 높이 튀어오르는 공처럼</li>
                 <li>미라클 모닝</li>
                 <li>탤런트 코드</li>
             </ol>
-            <img width="100px"
+            <img width="200px" style="margin-top: 20px;"
                 src="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMjg0/MDAxNjQzMTAyOTg0Nzgz.sLrqOJ2S3r6pLboUm5yJTjB_JECC0zO9Tt3y_h86aJcg.w5VER_KDRAW3yRq8-nypsm2aGmKurM5YieSFcr1Vg0Qg.JPEG.minziminzi128/IMG_7374.JPG?type=w800">
-
+            <br>
             Hi.
             <br>
-            My name is <strong><u>Song-i Park</u></strong>
+            My name is <strong>Song-i Park</strong>
             <br>
             Let me introduce some good books!
             <br>
-            Dive into the Sea of <i>String</i>! (haha)
+            Dive into the Sea of <i><strong>String!</strong></i> (haha)
 
 
             <p
-                style="margin-top: 5rem; margin-bottom: 3rem; font-style:italic; color:rgb(136, 136, 136); font-size: small; align-content: center;">
+                style="margin-top: 50px; margin-bottom: 3rem; font-style:italic; color:rgb(136, 136, 136); font-size: small; align-content: center;">
                 <iframe width="300px" src="https://www.youtube.com/embed/VL1-M6Qas74?si=C6-IgmKfs6kEeNZC"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -74,7 +93,7 @@
         </div>
 
 
-        <div>
+        <div id="Contents">
             <h3><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
             사이코 다카시 지음
             장은주 옮김
