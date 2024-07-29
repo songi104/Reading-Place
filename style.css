@@ -1,0 +1,10 @@
+h3 {
+    color: firebrick;
+}
+
+#title {
+    border: solid 5px rgba(172, 104, 151, 0.884); 
+    display: inline;
+    padding: 10px;
+    margin-bottom: 5px;
+}
