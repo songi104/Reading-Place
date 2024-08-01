@@ -4,6 +4,7 @@
 <head>
     <title>독서기록</title>
     <meta charset="utf-8">
+    <script src="./Utils.js"></script>
     <style>
         a {
             color: yellowgreen;
@@ -64,8 +65,7 @@
 
     <div id="grid">
         <div id="Left">
-            <input type="button" value="Day">
-            <input type="button" value="Night">
+            <input id="Color_Toggle" type="button" value="night" onclick="nightDayHandler(this);">
             <ol>
                 <li>혼자있는 시간의 힘</li>
                 <li>더 높이 튀어오르는 공처럼</li>
@@ -74,7 +74,7 @@
             </ol>
             <img width="200px" style="margin-top: 20px;"
                 src="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMjg0/MDAxNjQzMTAyOTg0Nzgz.sLrqOJ2S3r6pLboUm5yJTjB_JECC0zO9Tt3y_h86aJcg.w5VER_KDRAW3yRq8-nypsm2aGmKurM5YieSFcr1Vg0Qg.JPEG.minziminzi128/IMG_7374.JPG?type=w800">
-
+            <br>
             Hi.
             <br>
             My name is <strong>Song-i Park</strong>
@@ -84,14 +84,13 @@
             Dive into the Sea of <i><strong>String!</strong></i> (haha)
 
 
-            <p
-                style="margin-top: 50px; margin-bottom: 3rem; font-style:italic; color:rgb(136, 136, 136); font-size: small; align-content: center;">
+            <p class="song" style="margin-top: 50px; margin-bottom: 3rem;align-content: center;">
                 <iframe width="300px" src="https://www.youtube.com/embed/VL1-M6Qas74?si=C6-IgmKfs6kEeNZC"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <br>
-                노래를 들으면서 감상하세요!
+                <i style="color:rgb(136, 136, 136); font-size: small; ">노래를 들으면서 감상하세요!</i>
             </p>
         </div>
 
