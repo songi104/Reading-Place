@@ -1,10 +1,76 @@
-h3 {
-    color: firebrick;
+a {
+    color: yellowgreen;
+    text-decoration: underline;
 }
 
-#title {
-    border: solid 5px rgba(172, 104, 151, 0.884); 
-    display: inline;
-    padding: 10px;
+h1 {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+#Content {
+    display: grid;
+}
+
+#Left {
+    border-right: 2px solid rgba(173, 173, 173);
+    margin: 20px
+}
+
+@media(max-width:700px) {
+    #grid {
+        display: block;
+        grid-template-columns: 400px 1fr;
+    }
+
+    #Left {
+        border-right: none;
+        border-bottom: 2px solid rgba(173, 173, 173);
+    }
+}
+
+.Books {
+    display: flex;
+}
+
+.Book {
+    padding: 5px;
+    border: 1.5px solid;
+    height: 150px;
+    width: 100px;
+    margin: 7px;
+    border-radius: 5px;
+}
+
+.Book:hover {
+    scale: 1.1;
+    transition: 200ms;
+}
+
+.title {
+    margin-top : 0px;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-size: small;
+}
+
+.navbar {
+    position: fixed;
+    display: block;
+    margin-top: 5px;
     margin-bottom: 5px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgba(173, 173, 173); 
 }

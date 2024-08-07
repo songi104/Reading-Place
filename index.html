@@ -5,45 +5,16 @@
     <title>독서기록</title>
     <meta charset="utf-8">
     <script src="./Utils.js"></script>
-    <style>
-        a {
-            color: yellowgreen;
-            text-decoration: underline;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        #grid {
-            display: grid;
-            grid-template-columns: 400px 1fr;
-        }
-
-        #Content {
-            display: grid;
-        }
-
-        #Left {
-            border-right: 2px solid rgba(173, 173, 173);
-            margin: 20px
-        }
-
-        @media(max-width:700px) {
-            #grid {
-                display: block;
-                grid-template-columns: 400px 1fr;
-            }
-
-            #Left {
-                border-right: none;
-                border-bottom: 2px solid rgba(173, 173, 173);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar">
+            <h1>Reading-Place</h1>
+        </nav>
+    </header>
 
     <!-- Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -59,9 +30,7 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    <div id="Intro" style="border-bottom: 3px solid rgba(173, 173, 173); padding-bottom: 15px">
-        <h1>Reading-Place</h1>
-    </div>
+
 
     <div id="grid">
         <div id="Left">
@@ -95,32 +64,103 @@
         </div>
 
 
-        <div id="Contents">
-            <h3><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
-            사이코 다카시 지음
-            장은주 옮김
+        <div class="Books">
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+
+            <div class="Book">
+                <h3 class="title"><a href="더 높이 튀어오르는 공처럼.html" target="_blank">더 높이 튀어오르는 공처럼</a></h3>
+                <div class="author">
+                    존 니콜슨, 제인 클라크 지음
+                    노혜숙 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="https://brunch.co.kr/@freewil-life/15">미라클 모닝</a></h3>
+                '나의 과거는 나의 미래와 같지 않다'라는 진실을 받아들여야 한다.
+                스스로에게 자신감을 불어넣어야한다.
+                모든 것이 가능할 뿐만 아니라,
+                모든 것을 가능하게 만들 능력을 가지고 있으며,
+                노력할 것이라고 말하라.
+            </div>
+            <div class="Book">
+
+                <h3 class="title"><a href="탤런트 코드.html" target="_blank">탤런트 코드</a>
+                </h3>
+                <div class="author">
+                    대니얼 코일 지음
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
+            <div class="Book">
+                <h3 class="title"><a href="혼자 있는 시간의 힘.html" target="_blank">혼자있는 시간의 힘</a></h3>
+                <div class="author">
+                    사이코 다카시 지음
+                    장은주 옮김
+                </div>
+            </div>
 
 
-
-            <h3><a href="더 높이 튀어오르는 공처럼.html" target="_blank">더 높이 튀어오르는 공처럼</a></h3>
-            존 니콜슨, 제인 클라크 지음
-            노혜숙 옮김
-
-
-            <h3><a href="https://brunch.co.kr/@freewil-life/15">미라클 모닝</a></h3>
-            '나의 과거는 나의 미래와 같지 않다'라는 진실을 받아들여야 한다.
-            스스로에게 자신감을 불어넣어야한다.
-            모든 것이 가능할 뿐만 아니라,
-            모든 것을 가능하게 만들 능력을 가지고 있으며,
-            노력할 것이라고 말하라.
-
-            <h3><a href="탤런트 코드.html" target="_blank">탤런트 코드</a></h3>
-            대니얼 코일 지음
-
-            <br>
-            <br>
-            <br>
         </div>
+
+        <br>
+        <br>
+        <br>
+    </div>
     </div>
 
 </body>
