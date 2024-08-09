@@ -16,7 +16,7 @@ h1 {
     display: grid;
 }
 
-#Left {
+#Sidebar {
     border-right: 2px solid rgba(173, 173, 173);
     margin: 20px
 }
@@ -35,6 +35,7 @@ h1 {
 
 .Books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .Book {
